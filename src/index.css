@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply bg-dark text-primary;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-mono text-secondary hover:text-highlight transition-colors duration-300;
+  }
+
+  .social-icon {
+    @apply text-2xl text-secondary hover:text-highlight transition-colors duration-300;
+  }
+
+  .skill-card {
+    @apply flex flex-col items-center justify-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-highlight/10 hover:border-highlight/30 transition-all duration-300;
+  }
+
+  .project-card {
+    @apply p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-highlight/10 hover:border-highlight/30 transition-all duration-300;
+  }
+
+  .tech-tag {
+    @apply px-3 py-1 rounded-md bg-highlight/10 text-highlight text-sm font-mono;
+  }
+
+  .gradient-sphere {
+    @apply absolute rounded-full blur-3xl opacity-30 animate-sphere-float;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Fira Code', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  background-color: #000;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 0.875rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 4px;
+  }
+
+  .project-card {
+    padding: 4px;
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .social-icon {
+    font-size: 1.25rem;
+  }
+
+  .skill-card {
+    padding: 2px;
+  }
+
+  .project-card {
+    padding: 2px;
+  }
+
+  .tech-tag {
+    font-size: 0.625rem;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
