@@ -32,6 +32,27 @@
   .gradient-sphere {
     @apply absolute rounded-full blur-3xl opacity-30 animate-sphere-float;
   }
+
+  .terminal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .terminal-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-top: 1px solid rgba(97, 175, 239, 0.2);
+    background: transparent;
+    color: var(--text-primary);
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+  }
 }
 
 * {
@@ -142,6 +163,14 @@ button:focus-visible {
   .tech-tag {
     font-size: 0.75rem;
   }
+
+  .terminal {
+    padding: 0.5rem;
+  }
+
+  .terminal-input {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -163,6 +192,46 @@ button:focus-visible {
 
   .tech-tag {
     font-size: 0.625rem;
+  }
+
+  .terminal {
+    padding: 0.25rem;
+  }
+
+  .terminal-input {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-section {
+    padding: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .terminal-container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 0.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .terminal-container {
+    width: 95%;
+    margin: 0.5rem auto;
   }
 }
 

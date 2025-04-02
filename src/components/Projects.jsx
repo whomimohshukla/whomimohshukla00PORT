@@ -8,14 +8,21 @@ const Projects = () => {
       title: "BookMyBus",
       description: "An online bus ticket booking platform with real-time seat availability.",
       tech: ["React", "Node.js", "Express"],
-      github: "https://github.com/yourusername/bookmybus",
+      github: "https://github.com/whomimohshukla/bookmybus",
       live: "#"
     },
     {
       title: "Skillbridge Freelancing",
       description: "A platform connecting freelancers with clients for various projects.",
       tech: [],
-      github: "https://github.com/yourusername/skillbridge",
+      github: "https://github.com/whomimohshukla/skillbridge",
+      live: "#"
+    },
+    {
+      title: "Skillbridge Freelancing",
+      description: "A platform connecting freelancers with clients for various projects.",
+      tech: [],
+      github: "https://github.com/whomimohshukla/skillbridge",
       live: "#"
     }
   ];

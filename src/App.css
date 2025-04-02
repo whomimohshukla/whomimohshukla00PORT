@@ -1594,3 +1594,61 @@ button:hover {
     padding: 0 0.25rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .portfolio-card {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-items {
+    gap: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 0 0.5rem;
+  }
+
+  .portfolio-card {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-card {
+    padding: 0.5rem;
+  }
+
+  .nav-brand {
+    font-size: 0.9rem;
+  }
+
+  .nav-items {
+    gap: 0.5rem;
+  }
+
+  .project-card {
+    padding: 0.5rem;
+  }
+}
